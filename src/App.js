@@ -1,5 +1,4 @@
 import './App.css';
-import PageName from './components/PageName';
 import StaffPage from './pages/StaffPage';
 
 function App() {
