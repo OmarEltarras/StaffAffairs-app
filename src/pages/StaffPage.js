@@ -36,7 +36,7 @@ import EditPunishment from "./staff_affairs/Punishment/EditPunishment";
 import VacationPage from "./staff_affairs/Vacation/VacationPage";
 import EditVacation from "./staff_affairs/Vacation/EditVacation";
 import AddVacation from "./staff_affairs/Vacation/AddVacation";
-
+import './StaffPage.css';
 
 function StaffPage(){
     const [pageName,setPageName]=useState('')
@@ -44,77 +44,79 @@ function StaffPage(){
         setPageName(name);
     }
     return(
-        <Routes>
-            <Route path="/staffaffairs" element={<>  
-                <div className="d-flex">
-                    <div >
-                        <Sidebar handlePageName={handlePageName}/>
-                    </div>
-                    <div className="flex-grow-1">
-                        <PageName title={pageName} />
-                        <SearchData />
-                        <Outlet />
-                    </div>    
-                </div></>}>
-                <Route path='maindata' element={<Outlet />} >
-                    <Route index element={<MainDataPage />} />
-                    <Route path="create" element={<AddMember />} />
-                    <Route path=":mid/edit" element={<EditMember />} />
-                </Route>
-                <Route path='courses' element={<Outlet />} >
-                    <Route index element={<CoursePage />} />
-                    <Route path="create" element={<CreateCourse />} />
-                    <Route path=":mid/edit" element={<EditCourse />} />
-                </Route>
-                <Route path="qualification" element={<Outlet />}>
-                    <Route index element={<QualificationPage />} />
-                    <Route path="create" element={<AddQualification />} />
-                    <Route path=":mid/edit" element={<EditQualification />} />
-                </Route>
-                <Route path="punishment" element={<Outlet />}>
-                    <Route index element={<PunishmenPage />} />
-                    <Route path="create" element={<AddPunishment />} />
-                    <Route path=":mid/edit" element={<EditPunishment />} />
-                </Route>
-                <Route path="vacation" element={<Outlet />}>
-                    <Route index element={<VacationPage />} />
-                    <Route path="create" element={<AddVacation />} />
-                    <Route path=":mid/edit" element={<EditVacation />} />
-                </Route>
-                <Route path="certificatesofoperation" element={<Outlet />}>
-                    <Route index element={<CertificatesPage />} />
-                    <Route path="create" element={<AddCertificate />} />
-                    <Route path=":mid/edit" element={<EditCertificate />} />
-                </Route>
-                <Route path="family" element={<Outlet />}>
-                    <Route index element={<FamilyPage />} />
-                    <Route path="create" element={<AddFamilyMember />} />
-                    <Route path=":mid/edit" element={<EditFamilyMember />} />
-                </Route>
-                <Route path='jobs' element={<Outlet />} >
-                    <Route path="jobbefore" element={<Outlet />}>
-                        <Route index element={<JobBeforePage />} />
-                        <Route path="create" element={<CreateJobBefore />} />
-                        <Route path=":mid/edit" element={<EditJobBefore />} />
+        <div className="container-fluid">
+            <Routes>
+                <Route path="/staffaffairs" element={<>  
+                    <div className="d-flex">
+                        <div >
+                            <Sidebar handlePageName={handlePageName}/>
+                        </div>
+                        <div className="flex-grow-1">
+                            <PageName title={pageName} />
+                            <SearchData />
+                            <Outlet />
+                        </div>    
+                    </div></>}>
+                    <Route path='maindata' element={<Outlet />} >
+                        <Route index element={<MainDataPage />} />
+                        <Route path="create" element={<AddMember />} />
+                        <Route path=":mid/edit" element={<EditMember />} />
                     </Route>
-                    <Route path="supervisory" element={<Outlet />}>
-                        <Route index element={<SupervisoryJobsPage />} />
-                        <Route path="create" element={<CreateSupervisoryJob />} />
-                        <Route path=":mid/edit" element={<EditSupervisoryJob />} />
+                    <Route path='courses' element={<Outlet />} >
+                        <Route index element={<CoursePage />} />
+                        <Route path="create" element={<CreateCourse />} />
+                        <Route path=":mid/edit" element={<EditCourse />} />
                     </Route>
-                    <Route path="scientific" element={<Outlet />}>
-                        <Route index element={<ScientificJobPage />} />
-                        <Route path="create" element={<CreateScientificJob />} />
-                        <Route path=":mid/edit" element={<EditScientificJob />} />
+                    <Route path="qualification" element={<Outlet />}>
+                        <Route index element={<QualificationPage />} />
+                        <Route path="create" element={<AddQualification />} />
+                        <Route path=":mid/edit" element={<EditQualification />} />
                     </Route>
-                    <Route path="mandate" element={<Outlet />}>
-                        <Route index element={<MandatePage />} />
-                        <Route path="create" element={<CreateMandate />} />
-                        <Route path=":mid/edit" element={<EditMandate />} />
+                    <Route path="punishment" element={<Outlet />}>
+                        <Route index element={<PunishmenPage />} />
+                        <Route path="create" element={<AddPunishment />} />
+                        <Route path=":mid/edit" element={<EditPunishment />} />
+                    </Route>
+                    <Route path="vacation" element={<Outlet />}>
+                        <Route index element={<VacationPage />} />
+                        <Route path="create" element={<AddVacation />} />
+                        <Route path=":mid/edit" element={<EditVacation />} />
+                    </Route>
+                    <Route path="certificatesofoperation" element={<Outlet />}>
+                        <Route index element={<CertificatesPage />} />
+                        <Route path="create" element={<AddCertificate />} />
+                        <Route path=":mid/edit" element={<EditCertificate />} />
+                    </Route>
+                    <Route path="family" element={<Outlet />}>
+                        <Route index element={<FamilyPage />} />
+                        <Route path="create" element={<AddFamilyMember />} />
+                        <Route path=":mid/edit" element={<EditFamilyMember />} />
+                    </Route>
+                    <Route path='jobs' element={<Outlet />} >
+                        <Route path="jobbefore" element={<Outlet />}>
+                            <Route index element={<JobBeforePage />} />
+                            <Route path="create" element={<CreateJobBefore />} />
+                            <Route path=":mid/edit" element={<EditJobBefore />} />
+                        </Route>
+                        <Route path="supervisory" element={<Outlet />}>
+                            <Route index element={<SupervisoryJobsPage />} />
+                            <Route path="create" element={<CreateSupervisoryJob />} />
+                            <Route path=":mid/edit" element={<EditSupervisoryJob />} />
+                        </Route>
+                        <Route path="scientific" element={<Outlet />}>
+                            <Route index element={<ScientificJobPage />} />
+                            <Route path="create" element={<CreateScientificJob />} />
+                            <Route path=":mid/edit" element={<EditScientificJob />} />
+                        </Route>
+                        <Route path="mandate" element={<Outlet />}>
+                            <Route index element={<MandatePage />} />
+                            <Route path="create" element={<CreateMandate />} />
+                            <Route path=":mid/edit" element={<EditMandate />} />
+                        </Route>
                     </Route>
                 </Route>
-            </Route>
-        </Routes>
+            </Routes>
+        </div>
     );
 }
 export default StaffPage;
