@@ -40,7 +40,7 @@ function CreateMandate(){
                     <Input type="date" label="تاريخ القرار" id="decisionDate" handleChange={(e)=>setMandateData({...mandateData,decisionDate:e.target.value})}/>
                 </div>
             </div>
-            <FormSubmit href="/jobs/mandate" />
+            <FormSubmit href="/staffaffairs/jobs/mandate" />
         </form>
     );
 }

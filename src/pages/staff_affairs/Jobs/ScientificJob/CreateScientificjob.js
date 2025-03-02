@@ -41,7 +41,7 @@ function CreateScientificJob(){
                     <Input type="date" label="تاريخ القرار" id="decisionDate" handleChange={e=>setScientificData({...scientificData,decisionDate:e.target.value})}/>
                 </div>
             </div>
-            <FormSubmit href="/jobs/scientific" />
+            <FormSubmit href="/staffaffairs/jobs/scientific" />
         </form>
     );
 }

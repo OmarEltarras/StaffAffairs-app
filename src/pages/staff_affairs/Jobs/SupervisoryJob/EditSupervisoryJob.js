@@ -40,7 +40,7 @@ return(
                 <InputSelect  label="الكلية" id="college" handleChange={e=>setSupervisoryData({...supervisoryData,college:e.target.value})} value={supervisoryData.college}/>
             </div>
         </div>
-        <FormEdit href='/jobs/supervisory' />
+        <FormEdit href='/staffaffairs/jobs/supervisory' />
     </form>
 );
 }

@@ -42,7 +42,7 @@ function EditCertificate(){
                     <InputSelect  label="داخلي/خارجي" id="certificateType" handleChange={e=>setCertificateData({...certificateData,certificateType:e.target.value})} value={certificateData.certificateType}/>
                 </div>
             </div>
-            <FormEdit href="/certificatesofoperation" />
+            <FormEdit href="/staffaffairs/certificatesofoperation" />
         </form>
     );
 

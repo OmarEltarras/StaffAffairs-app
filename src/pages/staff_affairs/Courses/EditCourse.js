@@ -40,7 +40,7 @@ function EditCourse(){
                     <InputSelect  label="التقدير" id="rate" handleChange={(e=>setCourseData({...courseData,rate:e.target.value}))} value={courseData.rate}/>
                 </div>
             </div>
-            <FormEdit href="/courses" />
+            <FormEdit href="/staffaffairs/courses" />
         </form>
     );
 }

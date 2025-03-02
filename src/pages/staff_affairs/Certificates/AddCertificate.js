@@ -40,7 +40,7 @@ function AddCertificate(){
                     <InputSelect  label="داخلي/خارجي" id="certificateType"/>
                 </div>
             </div>
-            <FormSubmit href="/certificatesofoperation" />
+            <FormSubmit href="/staffaffairs/certificatesofoperation" />
         </form>
     );
 }

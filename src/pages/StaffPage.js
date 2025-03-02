@@ -45,7 +45,7 @@ function StaffPage(){
     }
     return(
         <Routes>
-            <Route path="/" element={<>
+            <Route path="/staffaffairs" element={<>  
                 <div className="d-flex">
                     <div >
                         <Sidebar handlePageName={handlePageName}/>

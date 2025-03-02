@@ -45,7 +45,7 @@ return(
                 <Input type="text" label="الوظيفة" id="personJob" handleChange={(e)=>setFamilyData({...familyData,personJob:e.target.value})} value={familyData.personJob}/>
             </div>
         </div>
-        <FormEdit href="/family" />
+        <FormEdit href="/staffaffairs/family" />
     </form>
 );
 

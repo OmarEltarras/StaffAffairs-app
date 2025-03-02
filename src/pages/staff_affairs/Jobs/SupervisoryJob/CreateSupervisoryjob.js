@@ -36,7 +36,7 @@ function CreateSupervisoryJob(){
                     <InputSelect  label="الكلية" id="college" handleChange={e=>setSupervisoryData({...supervisoryData,college:e.target.value})}/>
                 </div>
             </div>
-            <FormSubmit href='/jobs/supervisory' />
+            <FormSubmit href='/staffaffairs/jobs/supervisory' />
         </form>
     );
 }

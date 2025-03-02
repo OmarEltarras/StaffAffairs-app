@@ -32,7 +32,7 @@ function AddQualification(){
                         <Input label="التخصص الدقيق" type="text"  id="subspecialty" handleChange={(e)=>setQualificationData({...qualificationData,subspecialty:e.target.value})}/>
                     </div>
                 </div>
-                <FormSubmit href="/qualification" />
+                <FormSubmit href="/staffaffairs/qualification" />
             </form>
     );
 }

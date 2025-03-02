@@ -44,7 +44,7 @@ function EditMandate(){
                     <Input type="date" label="تاريخ القرار" id="decisionDate" handleChange={(e)=>setMandateData({...mandateData,decisionDate:e.target.value})} value={mandateData.decisionDate}/>
                 </div>
             </div>
-            <FormEdit href="/jobs/mandate" />
+            <FormEdit href="/staffaffairs/jobs/mandate" />
         </form>
     );
 }

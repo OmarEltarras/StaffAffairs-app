@@ -37,7 +37,7 @@ function AddVacation(){
                     <Input type="date" label="تاريخ القرار" id="decisionDate" handleChange={(e)=>setVacationData({...vacationData,decisionDate:e.target.value})}/>
                 </div>
             </div>
-            <FormSubmit href="/vacation" />
+            <FormSubmit href="/staffaffairs/vacation" />
         </form>
     );
 }

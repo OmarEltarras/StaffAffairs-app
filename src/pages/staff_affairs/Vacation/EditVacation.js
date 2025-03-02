@@ -41,7 +41,7 @@ function EditVacation(){
                     <Input type="date" label="تاريخ القرار" id="decisionDate" handleChange={(e)=>setVacationData({...vacationData,decisionDate:e.target.value})} value={vacationData.decisionDate}/>
                 </div>
             </div>
-            <FormEdit href="/vacation" />
+            <FormEdit href="/staffaffairs/vacation" />
         </form>
     );
 }

@@ -60,7 +60,7 @@ function EditPunishment(){
                         </div>
                     </div>
                 </fieldset>
-                <FormEdit href="/punishment" />
+                <FormEdit href="/staffaffairs/punishment" />
             </form>
         );
 }

@@ -36,7 +36,7 @@ function CreateCourse(){
                     <InputSelect  label="التقدير" id="rate" handleChange={(e=>setCourseData({...courseData,rate:e.target.value}))}/>
                 </div>
             </div>
-            <FormSubmit href="/courses" />
+            <FormSubmit href="/staffaffairs/courses" />
         </form>
     );
 }

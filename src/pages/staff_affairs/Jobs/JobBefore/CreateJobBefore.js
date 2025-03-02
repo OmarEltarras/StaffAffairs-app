@@ -37,7 +37,7 @@ function CreateJobBefore(){
                     <Input type="date" label="تاريخ القرار" id="decisionDate" handleChange={(e)=>setJobBeforeData({...jobBeforeData,decisionDate:e.target.value})}/>
                 </div>
             </div>
-            <FormSubmit href="/jobs/jobbefore" />
+            <FormSubmit href="/staffaffairs/jobs/jobbefore" />
         </form>
     );
 }

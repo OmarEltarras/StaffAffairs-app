@@ -46,7 +46,7 @@ function EditScientificJob(){
                     <Input type="date" label="تاريخ القرار" id="decisionDate" handleChange={e=>setScientificData({...scientificData,decisionDate:e.target.value})} value={scientificData.decisionDate}/>
                 </div>
             </div>
-            <FormEdit href="/jobs/scientific" />
+            <FormEdit href="/staffaffairs/jobs/scientific" />
         </form>
     );
 }

@@ -130,7 +130,7 @@ function EditMember(){
                         </div>
                     </div>
                 </fieldset>
-                <FormEdit href="/maindata"/>
+                <FormEdit href="/staffaffairs/maindata"/>
             </form>
         </div>
     );

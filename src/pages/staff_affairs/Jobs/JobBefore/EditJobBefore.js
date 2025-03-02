@@ -41,7 +41,7 @@ function EditJobBefore(){
                     <Input type="date" label="تاريخ القرار" id="decisionDate" handleChange={(e)=>setJobBeforeData({...jobBeforeData,decisionDate:e.target.value})} value={jobBeforeData.decisionDate}/>
                 </div>
             </div>
-            <FormEdit href="/jobs/jobbefore" />
+            <FormEdit href="/staffaffairs/jobs/jobbefore" />
         </form>
     );
 }

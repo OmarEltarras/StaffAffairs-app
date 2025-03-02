@@ -36,7 +36,7 @@ function EditQualification(){
                         <Input label="التخصص الدقيق" type="text"  id="subspecialty" handleChange={(e)=>setQualificationData({...qualificationData,subspecialty:e.target.value})} value={qualificationData.subspecialty}/>
                     </div>
                 </div>
-                <FormEdit href="/qualification" />
+                <FormEdit href="/staffaffairs/qualification" />
             </form>
     );
 }

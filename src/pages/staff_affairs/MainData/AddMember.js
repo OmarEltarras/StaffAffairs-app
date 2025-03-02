@@ -123,7 +123,7 @@ function AddMember(){
                         </div>
                     </div>
                 </fieldset>
-                <FormSubmit href="/maindata"/>
+                <FormSubmit href="/staffaffairs/maindata"/>
             </form>
         </div>
     );

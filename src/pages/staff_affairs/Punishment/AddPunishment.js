@@ -56,7 +56,7 @@ function AddPunishment(){
                         </div>
                     </div>
                 </fieldset>
-                <FormSubmit href="/punishment" />
+                <FormSubmit href="/staffaffairs/punishment" />
             </form>
         );
 }

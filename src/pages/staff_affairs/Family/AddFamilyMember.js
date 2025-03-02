@@ -41,7 +41,7 @@ function AddFamilyMember(){
                     <Input type="text" label="الوظيفة" id="personJob" handleChange={(e)=>setFamilyData({...familyData,personJob:e.target.value})}/>
                 </div>
             </div>
-            <FormSubmit href="/family" />
+            <FormSubmit href="/staffaffairs/family" />
         </form>
     );
 }
