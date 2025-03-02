@@ -1,8 +1,8 @@
-function Input({label,type,value,onChange,id}){
+function Input(props){
     return(
         <div className="d-flex align-items-center mb-3 ">
-            <label className="input-group-text" htmlFor={id} > {label} </label>
-            <input type={type}  value={value} onChange={onChange} className="form-control" id={id} />
+            <label className="input-group-text" htmlFor={props.id} > {props.label} </label>
+            <input type={props.type}  defaultValue={props.value} onChange={(e)=>props.handleChange(e)} className="form-control" id={props.id} />
         </div>
     );
 }

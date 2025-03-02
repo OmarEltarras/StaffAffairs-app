@@ -1,8 +1,8 @@
-function InputSelect({label,id}){
+function InputSelect(props){
     return(
-        <div class="input-group mb-3 align-items-center">
-                <label class="input-group-text" htmlFor={id}>{label}</label>
-                <select class="form-select" id={id}>
+        <div className="input-group mb-3 align-items-center">
+                <label className="input-group-text" htmlFor={props.id}>{props.label}</label>
+                <select className="form-select" id={props.id} onChange={(e)=>props.handleChange(e)} defaultValue={props.value}>
                     <option selected>Choose...</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>

@@ -1,12 +1,13 @@
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import Input from "../../components/Input";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function SearchData(){
     const [memberName, setMemberName] = useState('');
     const [nationalId, setNationalId] = useState('');
     const [fileNumber, setFileNumber] = useState('');
+    const [data,setData] = useState('')
 
     const MySwal = withReactContent(Swal)
     const handleSubmit = (event) => {
@@ -41,6 +42,21 @@ function SearchData(){
         // Clear error and process form submission
         console.log('Submitting:', { memberName, nationalId, fileNumber });
     };
+
+    async function fetchData(url){
+        try{
+            const response = await fetch(url)
+            setData(await response.json())
+        }catch(error){
+            console.log(Error("Fetching failed :",error))
+        }
+    }
+
+    // useEffect(()=>{
+    //     fetchData('url')
+    // })
+
+    sessionStorage.setItem('MemberData',data)
     return(
         <div className='mb-5'>
             <form method="GET" onSubmit={handleSubmit}>
